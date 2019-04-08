@@ -17,12 +17,12 @@ it('item => new item with durability === 100', () => {
 it('item => new item with enhancement + 1 (up to a max of 20)', () => {
   let received = {
     name: 'Sword of Succeed',
-    enhancement: 19,
+    enhancement: 17,
     durability: 28
   };
   let expected = {
     ...received,
-    enhancement: 20
+    enhancement: 18
   };
   expect(enhancer.succeed(received)).toEqual(expected);
   received = {
